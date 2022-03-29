@@ -143,6 +143,7 @@ const Presale = () => {
   }
 
   return (
+    
     <PresaleComponent
       buyerAddress={account}
       startTimeLeft={startTimeLeft}
@@ -151,12 +152,15 @@ const Presale = () => {
       tokenContract={getContract("SAFUTRENDZ")}
       presaleContract={getContract("PRESALE")}
       presaleSupply={2500000000}
+
       rate={
+     
         presaleInfo.token_rate
           ? ethers.BigNumber.isBigNumber(presaleInfo.token_rate)
-            ? ethers.BigNumber.from(presaleInfo.token_rate).toNumber()
+            ? ethers.BigNumber.from(presaleInfo.token_rate).toString()
             : presaleInfo.token_rate
           : 0
+        
       }
       softcap={
         Object.keys(presaleInfo).length > 0

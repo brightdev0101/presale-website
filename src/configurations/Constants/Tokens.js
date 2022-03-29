@@ -8,7 +8,7 @@ export const bscTokens = {
       name: "SaFuTrendz",
       symbol: "SAFU",
       decimal: 18,
-      address: "0x1CD316d3882E8Dd36C7B096eE362F018d6b9795d",
+      address: "0x4B3370B44A9E6A4EC28BfDb7C2C400758b59975d",
       projectUrl: "https://www.safutrendz.com/",
     },
   },
