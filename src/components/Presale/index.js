@@ -84,7 +84,7 @@ const Presale = ({
           </p>
           <p className="flex">
             <span>Token Rate:</span>
-            <span>{rate.substring(0,rate.length-18)}</span>
+            <span>{Number.parseFloat(rate)}</span>
           </p>
           <p className="flex">
             <span>Softcap:</span>
